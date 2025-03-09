@@ -1,11 +1,11 @@
 import { geistSans, geistMono } from '../utils/fonts';
 
-export default function Home() {
+export default function Projects() {
   return (
     <div
       className={`${geistSans.variable} ${geistMono.variable} font-[family-name:var(--font-geist-sans)]`}
     >
-      Home Page
+      Projects Page
     </div>
   );
 }
