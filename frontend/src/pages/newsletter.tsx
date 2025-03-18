@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { geistSans, geistMono } from "../utils/fonts";
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { geistSans, geistMono } from '../utils/fonts';
 
 export default function Newsletter() {
   // State to control the Latest Issue dropdown
@@ -12,7 +12,7 @@ export default function Newsletter() {
 
   return (
     <div
-      className={`${geistSans.variable} ${geistMono.variable} font-[family-name:var(--font-geist-sans)] p-4 bg-white text-[#244F7A]`}
+      className={`${geistSans.variable} ${geistMono.variable} font-[family-name:var(--font-geist-sans)] p-4 text-[#244F7A]`}
     >
       <h1 className="text-2xl font-bold mb-4 text-center text-[#244F7A]">
         Newsletter
@@ -26,14 +26,13 @@ export default function Newsletter() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-xl font-semibold mb-2 text-[#244F7A]">
-          About
-        </h2>
+        <h2 className="text-xl font-semibold mb-2 text-[#244F7A]">About</h2>
         <p>
-          Welcome to our monthly newsletter! Each issue covers the latest industry,
-          research and student developments regarding the ever expanding world of
-          Artificial Intelligence. We aim to keep you informed and inspired—whether
-          you’re involved in AI or just trying to fuel your curiosity!
+          Welcome to our monthly newsletter! Each issue covers the latest
+          industry, research and student developments regarding the ever
+          expanding world of Artificial Intelligence. We aim to keep you
+          informed and inspired—whether you’re involved in AI or just trying to
+          fuel your curiosity!
         </p>
       </motion.section>
 
@@ -68,15 +67,15 @@ export default function Newsletter() {
           className="text-xl font-semibold mb-2 text-[#244F7A] cursor-pointer inline-flex items-center justify-center"
           onClick={toggleLatestIssue}
         >
-          Latest Issue{" "}
-          <span className="ml-2">{showLatestIssue ? "▲" : "▼"}</span>
+          Latest Issue{' '}
+          <span className="ml-2">{showLatestIssue ? '▲' : '▼'}</span>
         </h2>
         <AnimatePresence initial={false}>
           {showLatestIssue && (
             <motion.div
               key="latestIssue"
               initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
+              animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.5 }}
             >
