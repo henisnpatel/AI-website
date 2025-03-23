@@ -25,6 +25,19 @@
   --breakpoint-3xl: 120rem;
 }
 
+html,
 body {
   background: #faf9f6;
+  height: 100dvh;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

@@ -10,7 +10,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b-2 border-[#2B85A8] w-full sticky top-0 z-50">
+    <div className="border-b-2 border-[#2B85A8] w-full sticky top-0 z-50 h-[90px]">
       <nav
         className={`${kalnia.variable} font-[family-name:var(--font-kalnia)] px-6 md:px-8 flex items-center max-w-6xl mx-auto w-full text-[#244F7A]`}
       >
