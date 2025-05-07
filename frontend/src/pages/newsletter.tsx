@@ -47,15 +47,13 @@ export default function Newsletter() {
       <div className="max-w-6xl mx-auto px-4 py-8 flex flex-col items-center gap-8">
         {/* Nexie Placeholder */}
         <div className="w-11/12 md:w-3/4 flex justify-center">
-          <div className="bg-[#72C2DA] w-full max-w-[400px] aspect-square shadow-lg rounded-xl flex items-center justify-center">
             <Image
-              src="/images/nexi2.gif"
+              src="/images/nexgif.gif"
               alt="Nexie Placeholder"
-              width={350}
-              height={350}
+              width={300}
+              height={300}
               className="object-contain"
             />
-          </div>
         </div>
 
         {/* About Section */}
@@ -127,7 +125,7 @@ export default function Newsletter() {
                 >
                   <div className="border border-blue-200 rounded-md">
                     <iframe
-                      src="/pdfs/AIC_Newsletter_February.pdf"
+                      src="/pdfs/AIC.pdf"
                       width="100%"
                       height="600"
                       title="Newsletter PDF"
