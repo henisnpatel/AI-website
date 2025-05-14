@@ -10,7 +10,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b-2 border-[#2B85A8] w-full sticky top-0 z-50 h-[90px]">
+    <div className="border-b-2 border-[#2B85A8] w-full sticky top-0 z-50 h-[90px] bg-[#FAF9F6]">
       <nav
         className={`${kalnia.variable} font-[family-name:var(--font-kalnia)] px-6 md:px-8 flex items-center max-w-6xl mx-auto w-full text-[#244F7A]`}
       >
@@ -57,7 +57,7 @@ export default function Navbar() {
       </nav>
 
       {isOpen && (
-        <ul className="md:hidden flex flex-col items-center bg-white shadow-md w-full py-3 space-y-3 text-sm">
+        <ul className="md:hidden flex flex-col items-center bg-[#faf9f6] shadow-md w-full py-3 space-y-3 text-sm">
           <li>
             <Link href="/" onClick={() => setIsOpen(false)}>
               Home
