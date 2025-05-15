@@ -42,7 +42,7 @@ export default function About() {
           }
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.2 }
     );
 
     sectionRefs.forEach(({ ref }) => {
@@ -92,25 +92,35 @@ export default function About() {
             />
             <AboutText
               title="Title #2"
+              text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptatem hic ab, sequi assumenda fugiat magnam vitae ducimus? Dolorem sint aspernatur quasi voluptatibus nulla. Totam saepe ad incidunt dolorum eveniet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptatem hic ab, sequi assumenda fugiat magnam vitae ducimus? Dolorem sint aspernatur quasi voluptatibus nulla. Totam saepe ad incidunt dolorum eveniet?"
+            />
+            <AboutText
+              title="Title #3"
+              text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptatem hic ab, sequi assumenda fugiat magnam vitae ducimus? Dolorem sint aspernatur quasi voluptatibus nulla. Totam saepe ad incidunt dolorum eveniet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptatem hic ab, sequi assumenda fugiat magnam vitae ducimus? Dolorem sint aspernatur quasi voluptatibus nulla. Totam saepe ad incidunt dolorum eveniet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptatem hic ab, sequi assumenda fugiat magnam vitae ducimus? Dolorem sint aspernatur quasi voluptatibus nulla. Totam saepe ad incidunt dolorum eveniet?"
+            />
+            <AboutText
+              title="Title #4"
               text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptatem hic ab, sequi assumenda fugiat magnam vitae ducimus? Dolorem sint aspernatur quasi voluptatibus nulla. Totam saepe ad incidunt dolorum eveniet?"
             />
           </div>
 
           {/* Exec Team Section */}
           <div ref={execTeamRef} className="mt-10">
-            <div className="flex flex-wrap gap-6">
+            <div className="flex flex-wrap gap-4">
               <div className="w-full md:w-[48%]">
                 <ExecMember
                   img_src="/portrait.avif"
                   name="Person #1"
                   role="Role #1"
                   desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptatem hic ab, sequi assumenda fugiat magnam vitae ducimus? Dolorem sint aspernatur quasi voluptatibus nulla. Totam saepe ad incidunt dolorum eveniet?"
+                  last={false}
                 />
                 <ExecMember
                   img_src="/portrait2.avif"
                   name="Person #2"
                   role="Role #2"
                   desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptatem hic ab, sequi assumenda fugiat magnam vitae ducimus?"
+                  last={true}
                 />
               </div>
               <div className="w-full md:w-[48%]">
@@ -119,19 +129,21 @@ export default function About() {
                   name="Person #3"
                   role="Role #3"
                   desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptatem hic ab, sequi assumenda fugiat magnam vitae ducimus? Dolorem sint aspernatur quasi voluptatibus nulla. Totam saepe ad incidunt dolorum eveniet?"
+                  last={false}
                 />
                 <ExecMember
                   img_src="/portrait.avif"
                   name="Person #4"
                   role="Role #4"
                   desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptatem hic ab, sequi assumenda fugiat magnam vitae ducimus? Dolorem sint aspernatur quasi voluptatibus nulla. Totam saepe ad incidunt dolorum eveniet?"
+                  last={true}
                 />
               </div>
             </div>
           </div>
 
           {/* FAQ Section */}
-          <div ref={faqRef} className="mt-10">
+          <div ref={faqRef}>
             <AboutText
               title="Question 1"
               text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptatem hic ab, sequi assumenda fugiat magnam vitae ducimus? Dolorem sint aspernatur quasi voluptatibus nulla. Totam saepe ad incidunt dolorum eveniet?"
